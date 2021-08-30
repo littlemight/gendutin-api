@@ -13,6 +13,9 @@ export const generateTopik = () => {
   const buzzSentence1 = `${
     Math.random() >= 0.5 ? randElm(prefix) + ' ' : ''
   }${generateBuzzSentence()}`;
+  if (Math.random() >= 0.5) {
+    return capSentence(buzzSentence1);
+  }
   const buzzSentence2 = generateBuzzSentence();
   return `${capSentence(buzzSentence1)} ${randElm(conjunction)} ${capSentence(
     buzzSentence2

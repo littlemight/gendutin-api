@@ -35,7 +35,7 @@ export const buzz2 = [
   'secure',
   'privacy preserving',
   'functional',
-  'berbasis oop',
+  'berbasis',
   'aplikasi',
   'website',
 ];
@@ -87,6 +87,7 @@ export const buzz3 = [
   'web services',
   // au ah random
   '-gpu',
+  '-oop',
   'cluster',
   'cloud',
   'computing'
