@@ -20,6 +20,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "googleapis": "^84.0.0",
     "ts-node": "^10.2.1",
     "tsconfig-paths": "^3.11.0",
     "tslib": "^2.3.1"

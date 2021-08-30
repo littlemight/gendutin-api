@@ -1,20 +1,19 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import cors from 'cors';
 import { generateTopik } from './common/topik';
-dotenv.config();
+import { env } from './common/env';
 
 const app = express();
 
 app.use(cors({ credentials: true, origin: true }));
 
-app.get('/topik', (req, res) => {
+app.get('/topik', async (req, res) => {
   res.send({
-    topik: generateTopik(),
+    topik: await generateTopik(),
   });
 });
 
-const port = process.env.PORT || 3000;
+const port = env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on ${port}`);
 });
