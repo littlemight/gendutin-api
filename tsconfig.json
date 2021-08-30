@@ -3,7 +3,6 @@
     "target": "esnext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "noEmit": true,
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src",
