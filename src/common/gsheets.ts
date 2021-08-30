@@ -5,7 +5,7 @@ const API_SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 const SPREADSHEET_ID = env.SPREADSHEET_ID || 'spreadsheet id hehe';
 
 export const auth = new google.auth.GoogleAuth({
-  keyFile: 'credentials.json',
+  keyFile: 'google-credentials.json',
   scopes: API_SCOPE,
 });
 
