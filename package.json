@@ -6,7 +6,9 @@
   "author": "Michel Fang <mfang555@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn ts-node-dev -r tsconfig-paths/register src"
+    "dev": "yarn ts-node-dev -r tsconfig-paths/register src",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
+    "postinstall": "tsc"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
